@@ -1,0 +1,1 @@
+Write-Host (Get-Childitem env:APPVEYOR_JOB_ID).Value

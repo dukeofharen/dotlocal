@@ -17,6 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ducode.Local.Tests", "Ducod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ducode.Local.Utilities", "Ducode.Local.Utilities\Ducode.Local.Utilities.csproj", "{6E49F5E1-46D1-4539-A7C9-7CBF5372DC76}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScripts", "{3AE96A1C-035F-4352-85D0-A0E6884A30B1}"
+	ProjectSection(SolutionItems) = preProject
+		before_build.ps1 = before_build.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
