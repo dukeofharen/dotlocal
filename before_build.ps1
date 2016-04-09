@@ -1,1 +1,2 @@
-Write-Host (Get-Childitem env:APPVEYOR_JOB_ID).Value
+$BuildNumber = (Get-Childitem env:APPVEYOR_BUILD_NUMBER).Value
+Write-Host $BuildNumber
