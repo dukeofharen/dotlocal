@@ -4,7 +4,7 @@ before_build:
   - nuget restore
   
 install:
-  - ps: Write-Host 'This is PowerShell'
+  - ps: powershell .\before_build.ps1
 
 build:
   verbosity: minimal
