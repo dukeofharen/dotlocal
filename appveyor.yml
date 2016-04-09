@@ -14,7 +14,7 @@ build:
   verbosity: minimal
 
 after_build:
-  - ps: Rename-Item Ducode.Local\bin\$(configuration)\Ducode.Local.exe dotlocal.exe
+  - ps: Rename-Item "Ducode.Local\bin\"(Get-Childitem env:CONFIGURATION).Value"\Ducode.Local.exe" dotlocal.exe
 
 artifacts:
   - path: Ducode.Local\bin\$(configuration)
