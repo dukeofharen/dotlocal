@@ -2,6 +2,9 @@ configuration: Release
 
 before_build:
   - nuget restore
+  
+install:
+  - ps: Write-Host 'This is PowerShell'
 
 build:
   verbosity: minimal
