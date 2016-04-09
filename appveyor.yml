@@ -13,6 +13,9 @@ assembly_info:
 build:
   verbosity: minimal
 
+after_build:
+  - ps: Rename-Item .\Ducode.Local\bin\Ducode.Local.exe dotlocal.exe
+
 artifacts:
   - path: Ducode.Local\bin\$(configuration)
     name: dotlocal
