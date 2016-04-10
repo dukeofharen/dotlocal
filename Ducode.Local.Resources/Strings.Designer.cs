@@ -71,7 +71,7 @@ namespace Ducode.Local.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to (c) Duco Winterwerp - ducode.org
-        ///Icon by uniquedesign10.com.
+        ///Icon by Icons Land (www.icons-land.com).
         /// </summary>
         public static string copyright {
             get {
