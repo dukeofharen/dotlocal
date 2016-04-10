@@ -4,6 +4,10 @@
 
 A simple local web server written for the .NET framework. It provides just enough functionality to be awesome.
 
+## Releases
+
+- Version 0.1.18 ([download](http://duc.gr/dl-0.1.18))
+
 ## Options
 
 ```
