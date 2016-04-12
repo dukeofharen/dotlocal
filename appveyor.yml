@@ -19,3 +19,15 @@ after_build:
 artifacts:
   - path: Ducode.Local\bin\$(configuration)
     name: dotlocal
+deploy:
+  release: dotlocal-v$(appveyor_build_version)
+  description: $(APPVEYOR_REPO_COMMIT_MESSAGE)
+  provider: GitHub
+  auth_token:
+    secure: YtUWDe0QCqAklOs3NV/wTu6z06m3OycUM7TW7B6WLQ/LE4csuwL/LzHLNSgB/7w/ # your encrypted token from GitHub
+  artifact: /.*\.zip/            # upload all NuGet packages to release assets
+  draft: true
+  prerelease: false
+  on:
+    branch: master                 # release from master branch only
+    appveyor_repo_tag: true        # deploy on tag push only
