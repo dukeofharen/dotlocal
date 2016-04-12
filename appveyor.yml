@@ -1,14 +1,17 @@
 configuration: Release
 
+environment:
+  app_version: 0.1.$(APPVEYOR_BUILD_NUMBER)
+
 before_build:
   - nuget restore
   
 assembly_info:
   patch: true
   file: AssemblyInfo.*
-  assembly_version: "0.1.{build}"
-  assembly_file_version: "0.1.{build}"
-  assembly_informational_version: "0.1.{build}"
+  assembly_version: $(app_version)
+  assembly_file_version: $(app_version)
+  assembly_informational_version: $(app_version)
 
 build:
   verbosity: minimal
@@ -20,7 +23,7 @@ artifacts:
   - path: Ducode.Local\bin\$(configuration)
     name: dotlocal
 deploy:
-  release: dotlocal-v$(appveyor_build_version)
+  release: v$(app_version)
   description: $(APPVEYOR_REPO_COMMIT_MESSAGE)
   provider: GitHub
   auth_token:
@@ -29,5 +32,4 @@ deploy:
   draft: true
   prerelease: false
   on:
-    branch: master                 # release from master branch only
     appveyor_repo_tag: true        # deploy on tag push only
