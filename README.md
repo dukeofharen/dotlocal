@@ -4,10 +4,6 @@
 
 A simple local web server written for the .NET framework. It provides just enough functionality to be awesome.
 
-## Releases
-
-- Version 0.1.18 ([download](http://duc.gr/dl-0.1.18))
-
 ## Options
 
 ```
@@ -35,3 +31,7 @@ A simple local web server written for the .NET framework. It provides just enoug
 ## Example
 
 `dotlocal -p 8080 -r "C:\WebRoot" -o true`
+
+## Get it
+
+Download the latest release from [GitHub](https://github.com/dukeofharen/dotlocal/releases/latest), or install the package through [Chocolatey](https://chocolatey.org/): `choco install dotlocal`.
