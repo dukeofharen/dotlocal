@@ -18,18 +18,24 @@ build:
 
 after_build:
   - ps: powershell .\AfterBuild.ps1
+  - ps: powershell .\PatchChocoPackage.ps1
+  - cmd: choco pack .\choco\iforgot.nuspec
 
 artifacts:
   - path: Ducode.Local\bin\$(configuration)
     name: dotlocal
+    
+  - path: '.\dotlocal.$(app_version).nupkg'
+    name: dotlocal-nupkg
+
 deploy:
   release: v$(app_version)
   description: $(APPVEYOR_REPO_COMMIT_MESSAGE)
   provider: GitHub
   auth_token:
     secure: YtUWDe0QCqAklOs3NV/wTu6z06m3OycUM7TW7B6WLQ/LE4csuwL/LzHLNSgB/7w/ # your encrypted token from GitHub
-  artifact: /.*\.zip/            # upload all NuGet packages to release assets
+  artifact: /.*\.zip/,/.*\.nupkg/
   draft: true
   prerelease: false
   on:
-    appveyor_repo_tag: true        # deploy on tag push only
+    appveyor_repo_tag: true
