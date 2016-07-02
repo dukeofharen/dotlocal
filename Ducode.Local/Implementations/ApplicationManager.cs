@@ -16,7 +16,7 @@ namespace Ducode.Local.Implementations
 
 		public string GetDefaultFolder()
 		{
-			return Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            return Environment.CurrentDirectory;
 		}
 	}
 }

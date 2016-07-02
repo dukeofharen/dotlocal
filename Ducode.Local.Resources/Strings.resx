@@ -165,7 +165,7 @@ Icon by Icons Land (www.icons-land.com)</value>
     <value>Press any key to exit...</value>
   </data>
   <data name="url_format" xml:space="preserve">
-    <value>http://localhost:{0}/</value>
+    <value>http://*:{0}/</value>
   </data>
   <data name="web_server_root" xml:space="preserve">
     <value>The web server root folder is "{0}"</value>

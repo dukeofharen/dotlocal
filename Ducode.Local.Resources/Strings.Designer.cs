@@ -186,7 +186,7 @@ namespace Ducode.Local.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to http://localhost:{0}/.
+        ///   Looks up a localized string similar to http://*:{0}/.
         /// </summary>
         public static string url_format {
             get {
