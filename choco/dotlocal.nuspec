@@ -10,7 +10,7 @@
     <description>A simple local web server written for the .NET framework. It provides just enough functionality to be awesome.
     </description>
     <projectUrl>https://github.com/dukeofharen/dotlocal</projectUrl>
-    <tags>dotlocal webserver windows .net</tags>
+    <tags>dotlocal webserver</tags>
     <copyright>Duco Winterwerp</copyright>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
