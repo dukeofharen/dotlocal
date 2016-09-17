@@ -34,4 +34,4 @@ A simple local web server written for the .NET framework. It provides just enoug
 
 ## Get it
 
-Download the latest release from [GitHub](https://github.com/dukeofharen/dotlocal/releases/latest), or install the package through [Chocolatey](https://chocolatey.org/): `choco install dotlocal`.
+[Download the latest releases here (installer and zipped package)](https://www.dropbox.com/sh/e2r82yh34240nfp/AAC-Fe9eoet5pD9lfB05Vn3da?dl=0)
